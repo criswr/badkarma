@@ -1,0 +1,41 @@
+.NavBar {
+    background-color: rgb(48, 48, 48);
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.NavBarContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.NavBarButtons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.logo {
+
+    width: 150px;
+    height: 43px;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 600px) {
+    .NavBar{
+        padding: 10px 30px;
+    }
+    
+    .NavBarButtons {
+        flex-direction: row;
+    }
+}

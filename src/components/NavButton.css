@@ -1,0 +1,13 @@
+.NavButton {
+    padding: 5px 10px;
+    color: gray;
+    transition: background-color 200ms ease;
+    transition: color 200ms ease;
+}
+
+.NavButton:hover, .NavButton:active {
+    background-color: gray;
+    color: white;
+    transition: background-color 200ms ease;
+    transition: color 200ms ease;
+}
