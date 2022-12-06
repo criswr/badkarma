@@ -1,0 +1,29 @@
+.itemDetail {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+}
+
+.itemDetail img{
+    width: 100%;
+    max-width: 500px;
+}
+
+.itemInfo p {
+    margin: 10px 0;
+}
+
+.itemPrice {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 600px) {
+    .itemDetail {
+        flex-direction: row;
+    }
+
+    .itemInfo {
+        margin: 40px 0;
+    }
+}

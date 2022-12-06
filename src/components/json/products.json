@@ -1,0 +1,133 @@
+[
+    {
+        "id": "BK210101",
+        "year": 2021,
+        "name": "Polera Cabeza Serpiente",
+        "image": "https://badkarma.cl/wp-content/uploads/2021/03/polera-cabeza-serpiente.jpg",
+        "price": 17990,
+        "stock": 3,
+        "description": "Polera diseño original Bad Karma, 100% algodón calce estándar.",
+        "category": "camisetas"
+    },
+
+    {
+        "id": "BK210102",
+        "year": 2021,
+        "name": "Polera Calavera Rosas",
+        "image": "https://badkarma.cl/wp-content/uploads/2021/03/polera-calavera-rosas-1.jpg",
+        "price": 26990,
+        "stock": 4,
+        "description": "Polera diseño original Bad Karma, 100% algodón calce estándar.",
+        "category": "camisetas"
+    },
+
+    {
+        "id": "BK210103",
+        "year": 2021,
+        "name": "Polera Contribute To The Chaos",
+        "image": "https://badkarma.cl/wp-content/uploads/2021/03/polera-contribute-to-the-chaos-1.jpg",
+        "price": 26990,
+        "stock": 1,
+        "description": "Polera diseño original Bad Karma, 100% algodón calce estándar.",
+        "category": "camisetas"
+    },
+
+    {
+        "id": "BK210104",
+        "year": 2021,
+        "name": "Polera Corazón Púas",
+        "image": "https://badkarma.cl/wp-content/uploads/2021/03/polera-corazon-puas.jpg",
+        "price": 17990,
+        "stock": 2,
+        "description": "Polera diseño original Bad Karma, 100% algodón calce estándar.",
+        "category": "camisetas"
+    },
+
+    {
+        "id": "BK210105",
+        "year": 2022,
+        "name": "Polera Grindcore",
+        "image": "https://badkarma.cl/wp-content/uploads/2021/03/polera-grindcore.jpg",
+        "price": 19990,
+        "stock": 7,
+        "description": "Polera diseño original Bad Karma, 100% algodón calce estándar.",
+        "category": "camisetas"
+    },
+
+    {
+        "id": "BK210106",
+        "year": 2022,
+        "name": "Polera Mariposa",
+        "image": "https://badkarma.cl/wp-content/uploads/2021/03/polera-mariposa-1.jpg",
+        "price": 17990,
+        "stock": 5,
+        "description": "Polera diseño original Bad Karma, 100% algodón calce estándar.",
+        "category": "camisetas"
+    },
+
+    {
+        "id": "BK210107",
+        "year": 2022,
+        "name": "Polera Nobody's Victim",
+        "image": "https://badkarma.cl/wp-content/uploads/2021/03/polera-nobodys-victym-1.jpg",
+        "price": 26990,
+        "stock": 4,
+        "description": "Polera diseño original Bad Karma, 100% algodón calce estándar.",
+        "category": "camisetas"
+    },
+
+    {
+        "id": "BK210108",
+        "year": 2022,
+        "name": "Polera Rey Rata Black On Black",
+        "image": "https://badkarma.cl/wp-content/uploads/2021/03/polera-rey-rata-black-1.jpg",
+        "price": 19990,
+        "stock": 10,
+        "description": "Polera diseño original Bad Karma, 100% algodón calce estándar.",
+        "category": "camisetas"
+    },
+
+    {
+        "id": "BK210110",
+        "year": 2022,
+        "name": "Polera Rosa Araña",
+        "image": "https://badkarma.cl/wp-content/uploads/2021/03/polera-rosa-arana-1.jpg",
+        "price": 17990,
+        "stock": 1,
+        "description": "Polera diseño original Bad Karma, 100% algodón calce estándar.",
+        "category": "camisetas"
+    },
+
+    {
+        "id": "BKST01",
+        "year": 2021,
+        "name": "Set 5 Stickers",
+        "image": "https://badkarma.cl/wp-content/uploads/2021/04/stickers1.jpg",
+        "price": 990,
+        "stock": 21,
+        "description": "Lámina de stickers 10 x 14 cm que incluye 5 adhesivos.",
+        "category": "accesorios"
+    },
+
+    {
+        "id": "BK210112",
+        "year": 2022,
+        "name": "Gorra Trucker You Are Dead To Me Gris",
+        "image": "https://badkarma.cl/wp-content/uploads/2021/05/you-are-dead-gris-1.jpg",
+        "price": 16990,
+        "stock": 5,
+        "description": "Gorra tipo trucker DoubleAA diseño original Bad Karma.",
+        "category": "accesorios"
+    },
+
+    {
+        "id": "BK210113",
+        "year": 2022,
+        "name": "Gorra Trucker You Are Dead To Me Negro",
+        "image": "https://badkarma.cl/wp-content/uploads/2021/05/you-are-dead-negro-1.jpg",
+        "price": 16990,
+        "stock": 4,
+        "description": "Gorra tipo trucker DoubleAA diseño original Bad Karma.",
+        "category": "accesorios"
+    }
+]

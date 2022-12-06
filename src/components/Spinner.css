@@ -1,0 +1,22 @@
+.spinnerContainer {
+/*     position: absolute; */
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    animation: spin 1000ms infinite ease;
+    width: 50px;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(720deg);}
+}
+  

@@ -1,14 +1,22 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header.jsx';
+import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import NotFound from './components/NotFound';
 
 function App() {
   return (
-    <div>
-      <Header />
-      <ItemListContainer greeting={"Bienvenido a Bad Karma"}/>
-    </div>
+    <BrowserRouter>
+      <NavBar />
+      <Routes>
+        <Route path={"/"} element={<ItemListContainer />} />
+        <Route path={"/category/:category"} element={<ItemListContainer />} />
+        <Route path={"/item/:id"} element={<ItemDetailContainer />} />
+        <Route path={"*"} element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

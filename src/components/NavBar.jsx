@@ -3,30 +3,30 @@ import NavButton from "./NavButton";
 import "./NavBar.css"
 import logo from "../images/logo.png";
 import CartWidget from "./CartWidget";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
+    const activeClass = ({ isActive }) => (isActive ? "activeNavButton" : "");
+
     return (
         <div className="NavBar">
-            <div className="container NavBarContainer">
-                <a href="/">
+            <div className="NavBarContainer">
+                <NavLink to="/">
                     <img src={logo} alt="Bad Karma" className="logo"/>
-                </a>
+                </NavLink>
                 <div className="NavBarButtons">
-                    <a href="/">
+                    <NavLink exact to="/">
                         <NavButton seccion={"Inicio"}/>
-                    </a>
-                    <a href="/2021">
-                        <NavButton seccion={"Drop 2021"}/>
-                    </a>
-                    <a href="/2022">                     
-                        <NavButton seccion={"Drop 2022"}/>
-                    </a>
-                    <a href="/contacto">
-                        <NavButton seccion={"Contacto"}/>
-                    </a>
-                    <a href="/carrito">
+                    </NavLink>
+                    <NavLink exact to="/category/camisetas" className={activeClass}>
+                        <NavButton seccion={"Camisetas"}/>
+                    </NavLink>
+                    <NavLink exact to="/category/accesorios" className={activeClass}>                     
+                        <NavButton seccion={"Accesorios"}/>
+                    </NavLink>
+                    <NavLink exact to="/carrito">
                         <CartWidget />
-                    </a>
+                    </NavLink>
                 </div>
             </div>
         </div>

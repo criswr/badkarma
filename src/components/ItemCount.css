@@ -1,0 +1,50 @@
+.itemCount{
+    display: flex;
+}
+
+.countOperations {
+    display: flex;
+}
+
+.operationButton {
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    color: white;
+    border-style: none;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+}
+
+.operationButton:hover {
+    background-color: black;
+}
+
+.itemCounter{
+    width: 35px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+
+.countOperations:hover .itemCounter {
+    background-color: rgb(177, 177, 177);
+    color: white;
+}
+
+.itemAdd {
+    margin: 0 15px;
+    padding: 0 15px;
+    height: 30px;
+    border-style: none;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+.itemAdd:hover {
+    background-color: black;
+}
