@@ -3,11 +3,14 @@ import cart from '../images/cart.svg';
 import "./CartWidget.css"
 
 const CartWidget = () => {
-    const cartItems = {"data-before": "2"}
+    const cartItems = 3
 
     return (
-        <div className="cart" {...cartItems}>
+        <div className="cart">
             <img src={cart} alt="Carrito" />
+            <div className="cartItemCount">
+                {cartItems}
+            </div>
         </div>
     )
 }

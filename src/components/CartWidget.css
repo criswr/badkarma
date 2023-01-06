@@ -1,22 +1,31 @@
 .cart {
-    width: 30px;
-    position: relative;
+    display: flex;
+    background-color: rgb(48, 48, 48);
+    border: 2px solid gray;
+    transition: background-color 200ms ease;
+
 }
 
-.cart::before {
-    content: attr(data-before);
-    position: absolute;
-    color: white;
+.cart:hover {
     background-color: gray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    border-radius: 50px;
-    width: 18px;
-    height: 18px;
-    right: -8px;
-    top: -3px;
-    font-size: 13px;
-    font-weight: 600;
+}
+
+.cart img {
+    width: 20px;
+    margin: 2px 4px 3px; 
+}
+
+.cartItemCount {
+    background-color: gray;
+    color: rgb(48, 48, 48);
+    padding: 2px 7px 3px; 
+    min-width: 25px;
+    text-align: center;
+    transition: background-color 200ms ease;
+    transition: color 200ms ease;
+}
+
+.cart:hover .cartItemCount {
+    background-color: rgb(48, 48, 48);
+    color: white;
 }

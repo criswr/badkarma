@@ -1,6 +1,6 @@
 [
     {
-        "id": "BK210101",
+        "key": "BK210101",
         "year": 2021,
         "name": "Polera Cabeza Serpiente",
         "image": "https://badkarma.cl/wp-content/uploads/2021/03/polera-cabeza-serpiente.jpg",
@@ -11,7 +11,7 @@
     },
 
     {
-        "id": "BK210102",
+        "key": "BK210102",
         "year": 2021,
         "name": "Polera Calavera Rosas",
         "image": "https://badkarma.cl/wp-content/uploads/2021/03/polera-calavera-rosas-1.jpg",
@@ -22,7 +22,7 @@
     },
 
     {
-        "id": "BK210103",
+        "key": "BK210103",
         "year": 2021,
         "name": "Polera Contribute To The Chaos",
         "image": "https://badkarma.cl/wp-content/uploads/2021/03/polera-contribute-to-the-chaos-1.jpg",
@@ -33,7 +33,7 @@
     },
 
     {
-        "id": "BK210104",
+        "key": "BK210104",
         "year": 2021,
         "name": "Polera Corazón Púas",
         "image": "https://badkarma.cl/wp-content/uploads/2021/03/polera-corazon-puas.jpg",
@@ -44,7 +44,7 @@
     },
 
     {
-        "id": "BK210105",
+        "key": "BK210105",
         "year": 2022,
         "name": "Polera Grindcore",
         "image": "https://badkarma.cl/wp-content/uploads/2021/03/polera-grindcore.jpg",
@@ -55,7 +55,7 @@
     },
 
     {
-        "id": "BK210106",
+        "key": "BK210106",
         "year": 2022,
         "name": "Polera Mariposa",
         "image": "https://badkarma.cl/wp-content/uploads/2021/03/polera-mariposa-1.jpg",
@@ -66,7 +66,7 @@
     },
 
     {
-        "id": "BK210107",
+        "key": "BK210107",
         "year": 2022,
         "name": "Polera Nobody's Victim",
         "image": "https://badkarma.cl/wp-content/uploads/2021/03/polera-nobodys-victym-1.jpg",
@@ -77,7 +77,7 @@
     },
 
     {
-        "id": "BK210108",
+        "key": "BK210108",
         "year": 2022,
         "name": "Polera Rey Rata Black On Black",
         "image": "https://badkarma.cl/wp-content/uploads/2021/03/polera-rey-rata-black-1.jpg",
@@ -88,7 +88,7 @@
     },
 
     {
-        "id": "BK210110",
+        "key": "BK210110",
         "year": 2022,
         "name": "Polera Rosa Araña",
         "image": "https://badkarma.cl/wp-content/uploads/2021/03/polera-rosa-arana-1.jpg",
@@ -99,7 +99,7 @@
     },
 
     {
-        "id": "BKST01",
+        "key": "BKST01",
         "year": 2021,
         "name": "Set 5 Stickers",
         "image": "https://badkarma.cl/wp-content/uploads/2021/04/stickers1.jpg",
@@ -110,7 +110,7 @@
     },
 
     {
-        "id": "BK210112",
+        "key": "BK210112",
         "year": 2022,
         "name": "Gorra Trucker You Are Dead To Me Gris",
         "image": "https://badkarma.cl/wp-content/uploads/2021/05/you-are-dead-gris-1.jpg",
@@ -121,7 +121,7 @@
     },
 
     {
-        "id": "BK210113",
+        "key": "BK210113",
         "year": 2022,
         "name": "Gorra Trucker You Are Dead To Me Negro",
         "image": "https://badkarma.cl/wp-content/uploads/2021/05/you-are-dead-negro-1.jpg",
