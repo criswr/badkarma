@@ -1,0 +1,22 @@
+.cartContainer {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    flex-direction: column;
+}
+
+.cartMainContainer {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    justify-content: center;
+}
+
+.cartContent {
+    width: 100%;
+    max-width: 800px;
+}

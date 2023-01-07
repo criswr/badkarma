@@ -16,7 +16,7 @@ const ItemListContainer = () => {
             setLoading(true)
             setTimeout(() => {
                 resolve(category ? arrayProductos.filter(item => item.category === category) : arrayProductos);
-            }, 2000);
+            }, 200);
         });
 
         promise.then(data => {

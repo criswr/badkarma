@@ -1,0 +1,42 @@
+.cartTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.cartTable td {
+    padding: 10px;
+}
+
+.cartThead {
+    border-bottom: 1px solid gray;
+}
+
+.cartTbody {
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.cartTable tbody tr:nth-last-child(2) {
+    border-bottom: 1px solid gray;
+}
+
+.cartTbody:hover {
+    background-color: rgb(250, 250, 250);
+}
+
+.cartCenter {
+    text-align: center;
+}
+
+.cartTotal {
+    font-weight: 600;
+}
+
+.finalButtons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.fadedButton {
+    background-color: rgb(202, 202, 202);
+}

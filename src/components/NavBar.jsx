@@ -15,16 +15,16 @@ const NavBar = () => {
                     <img src={logo} alt="Bad Karma" className="logo"/>
                 </NavLink>
                 <div className="NavBarButtons">
-                    <NavLink exact to="/">
+                    <NavLink to="/">
                         <NavButton seccion={"Inicio"}/>
                     </NavLink>
-                    <NavLink exact to="/category/camisetas" className={activeClass}>
+                    <NavLink to="/category/camisetas" className={activeClass}>
                         <NavButton seccion={"Camisetas"}/>
                     </NavLink>
-                    <NavLink exact to="/category/accesorios" className={activeClass}>                     
+                    <NavLink to="/category/accesorios" className={activeClass}>                     
                         <NavButton seccion={"Accesorios"}/>
                     </NavLink>
-                    <NavLink exact to="/carrito">
+                    <NavLink to="/cart">
                         <CartWidget />
                     </NavLink>
                 </div>

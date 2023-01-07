@@ -3,12 +3,17 @@ import { useEffect } from "react";
 import { useState } from "react";
 import ItemCount from "./ItemCount";
 import "./ItemDetail.css"
+import { CartContext } from "./context/CartContext";
+import { useContext } from "react";
+
 
 const ItemDetail = ({item}) => {
     const [itemStock, setItemStock] = useState(0);
+    const {addItem} = useContext(CartContext);
 
     const onAdd = (quantity) => {
         setItemStock(itemStock - quantity);
+        addItem(item, quantity);
     }
 
     useEffect(() => {

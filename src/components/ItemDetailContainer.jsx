@@ -15,7 +15,7 @@ const ItemDetailContainer = () => {
         const promise = new Promise ((resolve, reject) => {
             setTimeout(() => {
                 resolve(id ? arrayProductos.find(item => item.key === id) : arrayProductos);
-            }, 2000);
+            }, 200);
         })
 
         promise.then(data => {

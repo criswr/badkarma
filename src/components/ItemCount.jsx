@@ -32,6 +32,8 @@ const ItemCount = ({stock, onAdd}) => {
         }else{
             setCounter(0)
         }
+
+        onAdd(quantity)
     }
 
     return (

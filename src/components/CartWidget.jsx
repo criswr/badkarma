@@ -1,15 +1,20 @@
-import React from "react";
-import cart from '../images/cart.svg';
+import React, { useContext } from "react";
+import cartIcon from '../images/cart.svg';
 import "./CartWidget.css"
+import { CartContext } from "./context/CartContext";
 
 const CartWidget = () => {
-    const cartItems = 3
+    const {cart} = useContext(CartContext)
+
+    const totalItems = () => {
+        return cart.reduce((total, item) => total += item.quantity, 0)
+    }
 
     return (
         <div className="cart">
-            <img src={cart} alt="Carrito" />
+            <img src={cartIcon} alt="Carrito" />
             <div className="cartItemCount">
-                {cartItems}
+                {totalItems()}
             </div>
         </div>
     )
