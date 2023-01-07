@@ -19,12 +19,12 @@ const CartContent = () => {
                 </thead>
                 <tbody>
                     {cart.map(item => (
-                        <tr key={item.key} className="cartTbody">
+                        <tr key={item.id} className="cartTbody">
                             <td><img src={item.image} alt={item.name} width={40} /></td>
-                            <td><Link to={"/item/" + item.key}>{item.name}</Link></td>
+                            <td><Link to={"/item/" + item.id}>{item.name}</Link></td>
                             <td className="cartCenter">{item.quantity}</td>
                             <td className="cartCenter">${item.quantity * item.price}</td>
-                            <td><Link title="Eliminar" onClick={() => {removeItem(item.key)}}>✖</Link></td>
+                            <td><Link title="Eliminar" onClick={() => {removeItem(item.id)}}>✖</Link></td>
                         </tr>
                     ))}
                     <tr className="cartTotal">

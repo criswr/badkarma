@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { addDoc, collection, getDocs, getFirestore, query, where, limit } from "firebase/firestore";
 import { useParams } from "react-router-dom";
 import ItemList from "./ItemList";
 import "./ItemListContainer.css";
@@ -10,7 +11,7 @@ const ItemListContainer = () => {
     const [items, setItems] = useState([]);
     const [loading, setLoading] = useState(true)
 
-    useEffect(() => {
+/*     useEffect(() => {
 
         const promise = new Promise((resolve, reject) => {
             setLoading(true)
@@ -24,7 +25,18 @@ const ItemListContainer = () => {
             setLoading(false)
         });
 
-    }, [category]);
+    }, [category]); */
+
+    useEffect(() => {
+        const db = getFirestore();
+        const itemsCollection = collection(db, "productos");
+        const q = category ? query(itemsCollection, where("category", "==", category)) : itemsCollection;
+        
+        getDocs(q).then((snapShot) => {
+            setItems(snapShot.docs.map((doc) => ({id:doc.id, ...doc.data()})))
+            setLoading(false)
+        });
+    }, [category])
 
     return (
         <div className="mainContainer">
