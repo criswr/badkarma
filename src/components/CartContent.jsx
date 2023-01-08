@@ -38,7 +38,7 @@ const CartContent = () => {
             </table>
             <div className="finalButtons">
                 <Link title="Eliminar todos los productos" onClick={clear}><button className="itemAdd fadedButton">✖ Vaciar carrito</button></Link>
-                <Link onClick={clear}><button className="itemAdd">Finalizar compra 🡺</button></Link>
+                <Link to={"/checkout"}><button className="itemAdd">Finalizar compra 🡺</button></Link>
             </div>
             
         </div>

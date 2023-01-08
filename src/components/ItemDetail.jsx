@@ -1,11 +1,7 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import ItemCount from "./ItemCount";
 import "./ItemDetail.css"
 import { CartContext } from "./context/CartContext";
-import { useContext } from "react";
-
 
 const ItemDetail = ({item}) => {
     const [itemStock, setItemStock] = useState(0);

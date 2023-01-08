@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { addDoc, collection, getDocs, getFirestore, query, where, limit, doc, getDoc } from "firebase/firestore";
+import { getFirestore, doc, getDoc } from "firebase/firestore";
 import { useParams } from "react-router-dom";
 import ItemDetail from "./ItemDetail";
 import Spinner from "./Spinner";
@@ -19,7 +19,7 @@ const ItemDetailContainer = () => {
                 setLoading(false)
             }
         });
-    }, []);
+    }, [id]);
 
     return (
         <div className="mainContainer">

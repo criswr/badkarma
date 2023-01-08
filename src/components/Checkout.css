@@ -1,0 +1,30 @@
+.checkoutItem {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+.checkoutContent {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+}
+
+.checkoutForm {
+    width: 100%;
+    max-width: 500px;
+}
+
+.checkoutInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.createOrder {
+    margin: 10px 0;
+}
