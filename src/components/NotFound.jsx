@@ -7,8 +7,7 @@ const NotFound = () => {
         <div className="nFMainContainer">
             <div className="nFContainer">
                 <div>
-                    <h1>No encontramos lo que buscabas,</h1>
-                    <h2>pero esto te podría gustar:</h2>
+                    <h1>No encontramos lo que buscabas</h1>
                 </div>
                 <ItemListContainer />
             </div>

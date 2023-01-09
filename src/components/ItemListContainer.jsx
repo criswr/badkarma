@@ -6,14 +6,14 @@ import "./ItemListContainer.css";
 import Spinner from "./Spinner";
 
 const ItemListContainer = () => {
-    const {category} = useParams();
-    const [items, setItems] = useState([]);
+    const {category} = useParams()
+    const [items, setItems] = useState([])
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-        const db = getFirestore();
-        const itemsCollection = collection(db, "productos");
-        const q = category ? query(itemsCollection, where("category", "==", category)) : itemsCollection;
+        const db = getFirestore()
+        const itemsCollection = collection(db, "productos")
+        const q = category ? query(itemsCollection, where("category", "==", category)) : itemsCollection
         
         getDocs(q).then((snapShot) => {
             setItems(snapShot.docs.map((doc) => ({id:doc.id, ...doc.data()})))

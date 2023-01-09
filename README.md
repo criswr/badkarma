@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# React JS eCommerce "Bad Karma"
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Sobre el tema:
+Bad Karma es una marca de vestuario chilena de venta online.
 
-## Available Scripts
+### Estructura:
+```
+badkarma
+└───NavBar
+│   └───NavButton
+│   └───CartWidget
+└───ItemListContainer
+│   └───ItemList
+│       └───Item
+└───ItemDetailContainer
+│   └───ItemDetail
+│       └───ItemCount
+└───Cart
+│   └───CartContent
+└───Checkout
+└───NotFound
+```
 
-In the project directory, you can run:
+### Funcionamiento:
+#### Inicio:
+- Al ingresar se muestra la ruta base "/" donde se visualizan los productos.
+- En la sección del menú se muestra el carrito clickeable para ir a su respectiva vista.
+- En el menú se muestran las categorías "Camisetas" y "Accesorios", las que al ser clickeadas llevan a la ruta "/category/:category", donde ":category" es el nombre de la categoría utilizado para filtrar los productos.
+- El componente Navbar incluye el componente NavButton, siendo este un botón reutilizable que recibe su nombre como prop.
+- Mientras se cargan los elementos desde la base de datos, se muestra el componente Spinner.
 
-### `npm start`
+#### Productos:
+- Al clickear un producto se lleva a la ruta "/item/:id", donde ":id" es el identificador que se utiliza para encontrar dicho producto.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Firebase:
+- En la base de datos de Firebase se crean dos colecciones; "productos" donde se almacenan los datos de los items, y "ordenes" donde se guardan los datos ingresados por el usuario al finalizar una compra.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Carrito:
+- En el widget de carrito se muestra la cantidad de productos en él, sumando el total de unidades por cada item.
+- en la vista de Cart se muestra el resumen de los productos agregados, el valor total de la compra, un botón para borrar un item, otro botón para vaciar todo el carrito y luego el botón para finalizar la compra.
+- Si no hay items en el carrito, se indica así.
+- El componente Cart se separa en CartContent para que el renderizado condicional sea más legible.
 
-### `npm test`
+#### Checkout:
+- En la vista de Checkout se muestra un resumen de la compra, listando los productos mostrando la cantidad agregada entre paréntesis, antes del nombre. También se muestra el valor total del pedido.
+- Se incluyen los inputs para ingresar nombre, teléfono y correo.
+- Al finalizar la orden se muestra el mismo resumen de compra, junto con los datos ingresados y el código de pedido generado por Firebase. También se vacía el carrito.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### 404:
+- Al ingresar cualquier ruta no establecida, se muestra un mensaje y los productos disponibles.
